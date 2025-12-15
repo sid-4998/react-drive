@@ -82,3 +82,30 @@ root.render(heading);
 // multiple times thereby increasing the complexity and lines of code.
 // To solve this problem JSX allows us to use simple HTML elements by 
 // automatically converting them to react elements on the fly.
+
+// JSX expressions
+const sum = <h1>The sum of 2 and 3 is {2 + 3}</h1>;
+root.render(sum);
+// The curly braces are used to execute expressions in JSX
+
+let age = 23;
+root.render(<h1>I am {age} years old!</h1>);
+// It can also be used to access the value of variables
+
+function calclate(x) {
+  return x*x;
+}
+
+const square = <h1>The square of 2 is {calclate(2)}</h1>;
+root.render(square);
+
+// It can also be used to execute function calls
+
+const object = {
+  color: 'black',
+  car: 'mustang'
+};
+
+const vehicle = <h1>I have a {object.color} {object.car}</h1>;
+root.render(vehicle);
+// It can also be used to access object properties
