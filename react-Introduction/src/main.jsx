@@ -39,3 +39,27 @@ root.render(<h1>Fuck this shit!</h1>);
 // The render() method
 // This method is used to display the HTML content on the web page
 
+// JSX
+// JSX stands for Javascript XML
+// JSX helps us to write HTML in react
+// JSX allows us to place HTML elements in DOM 
+// without using createElement() and appendChild() methods
+// JSX converts HTML tags into react elements
+
+const element = <h1>Hello, React!</h1>;
+root.render(element);
+
+// In case of multiple HTML elements, wrap them inside parenthesis
+
+const newElement = (
+  <div>
+    <h1>Hello, React!</h1>
+    <h1>I am learning JSX</h1>
+  </div>
+)
+
+// The HTML content should always be wrapped inside one top level element
+// This is done to ensure proper rendering of the HTML content as React components
+// If this step is omitted JSX will throw an error
+
+root.render(newElement);
