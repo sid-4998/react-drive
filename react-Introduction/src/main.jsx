@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom/client';
 import FirstComponent from './components/First'
 import { SecondComponentWithProps, SecondComponentWithArrayProps, SecondComponentWithObjectProps } from './components/Props';
-
+import { Parent } from './components/PropsChildren';
 // react-dom is a module and client is a sub-module inside react-dom
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
@@ -136,5 +136,6 @@ root.render (
     <SecondComponentWithProps brand='Ford' model='Mustang' color='black' />
     <SecondComponentWithArrayProps basket = {fruits} />
     <SecondComponentWithObjectProps detail = {profile} />
+    <Parent />
   </>
 )
