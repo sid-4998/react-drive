@@ -1,4 +1,6 @@
 import ReactDOM from 'react-dom/client';
+import FirstComponent from './components/First'
+import { SecondComponentWithProps, SecondComponentWithArrayProps, SecondComponentWithObjectProps } from './components/Props';
 
 // react-dom is a module and client is a sub-module inside react-dom
 
@@ -109,3 +111,30 @@ const object = {
 const vehicle = <h1>I have a {object.color} {object.car}</h1>;
 root.render(vehicle);
 // It can also be used to access object properties
+
+
+// Rendering a component file
+
+root.render(
+  <FirstComponent />
+)
+
+// Rendering a component with props
+
+const fruits = ['apple', 'mango', 'guava'];
+const profile = {
+  firstname: 'Siddhant',
+  lastname: 'Jha',
+  age: '23',
+  position: 'SDE-1',
+  company: 'Google'
+}
+
+root.render (
+  <>
+    <FirstComponent />
+    <SecondComponentWithProps brand='Ford' model='Mustang' color='black' />
+    <SecondComponentWithArrayProps basket = {fruits} />
+    <SecondComponentWithObjectProps detail = {profile} />
+  </>
+)
