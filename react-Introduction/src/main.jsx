@@ -58,8 +58,27 @@ const newElement = (
   </div>
 )
 
+
 // The HTML content should always be wrapped inside one top level element
 // This is done to ensure proper rendering of the HTML content as React components
 // If this step is omitted JSX will throw an error
+// Alternatively we can also use a react fragment to wrap multiple HTML lines
+// A react fragment is nothing but HTML code enclosed in <></>
 
 root.render(newElement);
+
+// Behind the scenes of JSX converting a HTML tag into a react element
+import { createElement } from 'react';
+const heading = createElement('h1', null, 'Hello, World!');
+console.log(heading);
+// This createElement() react method is quite similar to the Javascript
+// createElement() method. The only difference is in the syntax. 
+root.render(heading);
+
+// Because of the complexity of creating a new react element using the
+// createElement() method, software engineers at meta developed JSX
+// Suppose if we want to create multiple such react elements and they
+// might be nested ones. Then we will have to use createElement() method
+// multiple times thereby increasing the complexity and lines of code.
+// To solve this problem JSX allows us to use simple HTML elements by 
+// automatically converting them to react elements on the fly.
