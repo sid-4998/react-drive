@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/client';
 import FirstComponent from './components/First'
 import { SecondComponentWithProps, SecondComponentWithArrayProps, SecondComponentWithObjectProps } from './components/Props';
 import { Parent } from './components/PropsChildren';
+import Football from './components/Event';
 // react-dom is a module and client is a sub-module inside react-dom
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
@@ -137,5 +138,21 @@ root.render (
     <SecondComponentWithArrayProps basket = {fruits} />
     <SecondComponentWithObjectProps detail = {profile} />
     <Parent />
+    <Football />
   </>
 )
+
+/** New git commands */
+
+/** In order to modify the last commit */ 
+
+// git add . /** stage new files */
+// git commit --amends --no-edit
+
+/*
+    --amends: To add this new file to the last commit
+    --no-edit: Specifies the last commit message is being used
+    In order to update the last commit message avoid the --no-edit flag
+*/
+
+// git push origin main
