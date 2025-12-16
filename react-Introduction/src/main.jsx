@@ -3,6 +3,7 @@ import FirstComponent from './components/First'
 import { SecondComponentWithProps, SecondComponentWithArrayProps, SecondComponentWithObjectProps } from './components/Props';
 import { Parent } from './components/PropsChildren';
 import Football from './components/Event';
+import Goal from './components/Conditional';
 // react-dom is a module and client is a sub-module inside react-dom
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));

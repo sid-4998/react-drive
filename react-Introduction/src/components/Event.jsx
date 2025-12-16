@@ -1,12 +1,11 @@
 // React events
 
+import Goal from "./Conditional";
+
 function Football() {
-    const shoot = (a, b) => {
-        alert(a, b.type);
-    }
 
     return (
-        <button onClick={(event) => shoot('Great shot', event)}>Take the shot</button>
+        <Goal />
     );
 }
 
