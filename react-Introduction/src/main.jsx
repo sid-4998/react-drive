@@ -73,6 +73,7 @@ root.render(newElement);
 
 // Behind the scenes of JSX converting a HTML tag into a react element
 import { createElement } from 'react';
+import List from './components/List';
 const heading = createElement('h1', null, 'Hello, World!');
 console.log(heading);
 // This createElement() react method is quite similar to the Javascript
@@ -140,6 +141,7 @@ root.render (
     <SecondComponentWithObjectProps detail = {profile} />
     <Parent />
     <Football />
+    <List />
   </>
 )
 

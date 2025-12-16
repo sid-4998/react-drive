@@ -61,3 +61,27 @@ export default Goal;
 
     } 
     The react gets stuck in an infinite loop due to the above code */
+
+// props vs state
+
+/** 1. Props are used to pass configuration, data and event handlers from a 
+ * parent component to a child component, making them reusable whereas state
+ * is used to store and manage dynamic data within the same component that changes
+ * over time maybe due to user interactions, API responses etc 
+*/
+
+/** 2. Props are immutable(read-only), meaning a child component cannot modify
+ * the props it recieves from the parent component whereas a state is mutable,
+ * meaning it can be modified within the same component. 
+ */
+
+/** 3. A component re-renders if its parent re-renders with new props and
+ * a component with a state along with its children re-renders everytime 
+ * its state gets updated.
+ */
+
+/** 4. Props are like arguments which are passed to a function and the function
+ * uses these values and cannot modify the values held by the caller whereas a state 
+ * is like a local variable declared within a function which can be modified and 
+ * accessed only by that function to track internal changes.
+ */
