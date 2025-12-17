@@ -12,7 +12,7 @@ export default function List() {
     );
 }
 
-// Keys are important as they help react to track of elements
+// Keys are important as they help react to keep track of elements
 // Whenever an element gets updated or removed, only that element gets re-rendered
 // instead of the entire list.
 // Keys must be unique among sibling elements
