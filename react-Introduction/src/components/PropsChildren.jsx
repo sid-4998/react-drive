@@ -19,4 +19,4 @@ function Parent() {
     );
 }
 
-export { Parent };
+export { Parent }; // named export

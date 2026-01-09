@@ -1,9 +1,11 @@
 import ReactDOM from 'react-dom/client';
 import FirstComponent from './components/First'
+// named imports
 import { SecondComponentWithProps, SecondComponentWithArrayProps, SecondComponentWithObjectProps } from './components/Props';
 import { Parent } from './components/PropsChildren';
+// default imports
 import Football from './components/Event';
-import Goal from './components/Conditional';
+import List from './components/List';
 // react-dom is a module and client is a sub-module inside react-dom
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
@@ -68,12 +70,16 @@ const newElement = (
 // If this step is omitted JSX will throw an error
 // Alternatively we can also use a react fragment to wrap multiple HTML lines
 // A react fragment is nothing but HTML code enclosed in <></>
+// Behind JSX the HTML markup is converted into plain javascript objects
+// and a function cannot return more than one object without using an array
+// so on wrapping the entire content inside one parent container or fragment
+// JSX converts that HTML into an array of Javascript objects.
 
 root.render(newElement);
 
 // Behind the scenes of JSX converting a HTML tag into a react element
 import { createElement } from 'react';
-import List from './components/List';
+import Toolbar from './components/Toolbar';
 const heading = createElement('h1', null, 'Hello, World!');
 console.log(heading);
 // This createElement() react method is quite similar to the Javascript
@@ -142,6 +148,7 @@ root.render (
     <Parent />
     <Football />
     <List />
+    <Toolbar />
   </>
 )
 

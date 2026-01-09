@@ -42,5 +42,15 @@ function SecondComponentWithObjectProps(props) {
     );
 }
 
-// This is how we can export multiple components 
+// This is how we can export multiple components using named exports
 export { SecondComponentWithProps, SecondComponentWithArrayProps, SecondComponentWithObjectProps };
+// Note that react functional components can have only one argument and that is the 
+// props object. Props maintain individuality between parent and child components 
+// as we can change the props passed to the child component in the parent component 
+// without affecting how the child component deals with those props and similarly 
+// we can alter the use of props in the child component without affecting the parent
+// component and the original props
+
+// We can also pass default values to a prop
+// These values are used if no value for that prop is specified in the parent component
+// or when value = undefined. But if value = null or 0, the default value is not used
