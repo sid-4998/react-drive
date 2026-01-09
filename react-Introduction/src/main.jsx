@@ -80,6 +80,7 @@ root.render(newElement);
 // Behind the scenes of JSX converting a HTML tag into a react element
 import { createElement } from 'react';
 import Toolbar from './components/Toolbar';
+import EventProp from './components/EventProp';
 const heading = createElement('h1', null, 'Hello, World!');
 console.log(heading);
 // This createElement() react method is quite similar to the Javascript
@@ -149,6 +150,7 @@ root.render (
     <Football />
     <List />
     <Toolbar />
+    <EventProp />
   </>
 )
 
