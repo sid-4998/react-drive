@@ -37,12 +37,25 @@ const ParentComponent = () => {
 
 const Button = ({onSmash, children}) => {
     return (
-        <button onClick={onSmash}>
+        <button onClick={e => {
+            e.stopPropagation();// Comment this line to simulate event propagation
+            onSmash();
+        }}>
             {children}
         </button>
     )
 }
+// Note that each react event as one and only object called the event object.
+// It is denoted by e.
+// Now when we click on the button, 
+// React calls the triggers the onClick event and its handlers
+// then calls the e.stopPropagation() method which prevents 
+// any event bubbling to its parent component.
+// And then the handlers calls the onSmash handler function passed 
+// as a prop to the Button component by the ParentComponent.
 
+// With this the onClick event of the ParentComponent does not gets triggered
+// on triggering the onClick event of the onSmash event of the Button component.
 
 
 export { ElementEventPropagation, ParentComponent };
