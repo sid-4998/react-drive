@@ -6,6 +6,7 @@ import { Parent } from './components/PropsChildren';
 // default imports
 import Football from './components/Event';
 import List from './components/List';
+import { ElementEventPropagation, ParentComponent } from './components/EventPropagation';
 // react-dom is a module and client is a sub-module inside react-dom
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
@@ -151,6 +152,8 @@ root.render (
     <List />
     <Toolbar />
     <EventProp />
+    <ElementEventPropagation />
+    <ParentComponent />
   </>
 )
 
