@@ -248,9 +248,9 @@ export function ArtList() {
             />
             <button onClick={handleClick}>Insert</button>
             <ul>
-                {artists.map(artist => {
+                {artists.map(artist => (
                     <li key={artist.id}>{artist.name}</li>
-                })}
+                ))}
             </ul>
         </>
     )

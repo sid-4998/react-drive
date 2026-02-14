@@ -82,7 +82,6 @@ root.render(newElement);
 import { createElement } from 'react';
 import Toolbar from './components/Toolbar';
 import EventProp from './components/EventProp';
-import Values, { MovePointer, UpdateValues, Form, ArtList } from './components/Hooks';
 const heading = createElement('h1', null, 'Hello, World!');
 console.log(heading);
 // This createElement() react method is quite similar to the Javascript
@@ -155,11 +154,6 @@ root.render (
     <EventProp />
     <ElementEventPropagation />
     <ParentComponent />
-    <Values />
-    <UpdateValues />
-    <MovePointer />
-    <Form />
-    <ArtList />
   </>
 )
 
