@@ -11,6 +11,7 @@ import { Context, PropDrilling } from './useContext/Context';
 import UserProfile from './useContext/UserProfile';
 import { UserProvider } from './useContext/UserContext';
 import UpdateUser from './useContext/UpdateUser';
+import Reducer from './useReducer/Reducer';
 
 export const App = () => {
   return (
@@ -35,6 +36,7 @@ export const App = () => {
         <UserProfile />
         <UpdateUser />
       </UserProvider>
+      <Reducer />
     </>
   )
 }
