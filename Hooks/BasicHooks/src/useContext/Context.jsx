@@ -59,5 +59,11 @@ const Context = () => {
 }
 
 // But when we want to pass different data, we'll have to create different contexts.
+// This creates a callback hell while consuming data provided by different contexts
+// In order to solve this we employ the useContext Hook
+
+// useContext Hook is used to share context values provided by the createContext object
+// instance to any functional component in the component tree
+
 
 export { PropDrilling, DataContext, Context, DataContext1 };

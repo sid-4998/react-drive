@@ -8,6 +8,9 @@ import BasicEffect from './useEffect/BasicEffect';
 import FetchDataEffect from './useEffect/FetchDataEffect';
 import TimerEffect from './useEffect/TimerEffect';
 import { Context, PropDrilling } from './useContext/Context';
+import UserProfile from './useContext/UserProfile';
+import { UserProvider } from './useContext/UserContext';
+import UpdateUser from './useContext/UpdateUser';
 
 export const App = () => {
   return (
@@ -28,6 +31,10 @@ export const App = () => {
       <TimerEffect />
       <PropDrilling />
       <Context />
+      <UserProvider>
+        <UserProfile />
+        <UpdateUser />
+      </UserProvider>
     </>
   )
 }
