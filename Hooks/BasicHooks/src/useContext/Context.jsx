@@ -36,6 +36,7 @@ import { createContext } from "react";
 
 // The instance below has two methods (Provider(To send Data) and Consumer(To receive data))
 const DataContext = createContext();
+const DataContext1 = createContext();
 
 const Context = () => {
     const data = {
@@ -43,11 +44,20 @@ const Context = () => {
         age: 23
     }
 
+    const data1 = {
+        name: 'Sarthak',
+        age: 20
+    }
+
     return (
         <DataContext.Provider value={data}>
-            <ComponentD />
+            <DataContext1.Provider value={data1}>
+                <ComponentD />
+            </DataContext1.Provider>
         </DataContext.Provider>
     )
 }
 
-export { PropDrilling, DataContext, Context };
+// But when we want to pass different data, we'll have to create different contexts.
+
+export { PropDrilling, DataContext, Context, DataContext1 };
