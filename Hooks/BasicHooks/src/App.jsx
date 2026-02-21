@@ -7,6 +7,7 @@ import ShoppingList from './useState/ShoppingList';
 import BasicEffect from './useEffect/BasicEffect';
 import FetchDataEffect from './useEffect/FetchDataEffect';
 import TimerEffect from './useEffect/TimerEffect';
+import { Context, PropDrilling } from './useContext/Context';
 
 export const App = () => {
   return (
@@ -25,6 +26,8 @@ export const App = () => {
       <BasicEffect />
       <FetchDataEffect />
       <TimerEffect />
+      <PropDrilling />
+      <Context />
     </>
   )
 }
