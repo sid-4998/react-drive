@@ -4,6 +4,9 @@ import Counter from './useState/Counter';
 import TodoList from './useState/TodoList';
 import Profile from './useState/Profile';
 import ShoppingList from './useState/ShoppingList';
+import BasicEffect from './useEffect/BasicEffect';
+import FetchDataEffect from './useEffect/FetchDataEffect';
+import TimerEffect from './useEffect/TimerEffect';
 
 export const App = () => {
   return (
@@ -19,6 +22,9 @@ export const App = () => {
       <TodoList />
       <Profile />
       <ShoppingList />
+      <BasicEffect />
+      <FetchDataEffect />
+      <TimerEffect />
     </>
   )
 }

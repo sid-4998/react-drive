@@ -50,7 +50,7 @@ export default function Values() {
 // When we call useState, we are telling react to remember something in that component
 
 // Everytime a component renders, the useState hook return an array with 2 values
-// 1. The state varibale with current value or initial value specified in the
+// 1. The state variable with current value or initial value specified in the
 // useState as an argument(If the component is rendering for the first time.)
 // 2. A state setter function which updates the current value of the state 
 // variable and triggers a re-render of the entire component
