@@ -12,6 +12,7 @@ import UserProfile from './useContext/UserProfile';
 import { UserProvider } from './useContext/UserContext';
 import UpdateUser from './useContext/UpdateUser';
 import Reducer from './useReducer/Reducer';
+import RefComponent, { DOMelements, Timer } from './useRef/Reference';
 
 export const App = () => {
   return (
@@ -37,6 +38,9 @@ export const App = () => {
         <UpdateUser />
       </UserProvider>
       <Reducer />
+      <RefComponent />
+      <DOMelements />
+      <Timer />
     </>
   )
 }
